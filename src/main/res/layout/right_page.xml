@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.xingchuang.haiguo.customview.LinearTitleBar
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:heightPercent="0.05" >
+
+        <com.xingchuang.haiguo.customimageview.CircleImageView
+            android:id="@+id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:onClick="onImageButtonClick"
+            android:src="@mipmap/girl2"
+            app:border_color="@color/lightgray"
+            app:border_width="2dp"
+            app:widthPercent="0.1" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_focus"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" />
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/white_bg"
+            android:gravity="center"
+            android:hint="@string/search"
+            android:onClick="onEditTextClick"
+            android:singleLine="true"
+            app:widthPercent="0.8" />
+
+        <ImageButton
+            android:id="@+id/startCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@mipmap/ic_launcher"
+            android:contentDescription="@string/desc"
+            android:onClick="onImageButtonClick"
+            android:scaleType="centerCrop"
+            app:widthPercent="0.1" />
+    </com.xingchuang.haiguo.customview.LinearTitleBar>
+
+    <com.xingchuang.haiguo.slideshowview.SlideShowView
+        android:id="@+id/slideshowView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/ll_title"
+        android:layout_centerHorizontal="true"
+        app:heightPercent="0.25" />
+
+    <ImageView
+        android:id="@+id/firstLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/slideshowView"
+        android:layout_marginTop="2dp"
+        android:background="@color/lightgray"
+        android:contentDescription="@string/desc" />
+
+    <com.xingchuang.haiguo.customview.LinearCenterViewGroup
+        android:id="@+id/firstTitle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/firstLine"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:heightPercent="0.125" >
+
+        <com.xingchuang.haiguo.customview.LinearCircleViewTextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            app:widthPercent="0.25" >
+
+            <com.xingchuang.haiguo.customimageview.CircleImageView
+                android:id="@+id/ib1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onImageButtonClick"
+                android:src="@mipmap/girl2"
+                app:border_color="@color/lightgray"
+                app:border_width="2dp"
+                app:heightPercent="0.6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/inSchool"
+                android:textColor="@color/orange"
+                app:heightPercent="0.3" />
+        </com.xingchuang.haiguo.customview.LinearCircleViewTextView>
+
+        <com.xingchuang.haiguo.customview.LinearCircleViewTextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            app:widthPercent="0.25" >
+
+            <com.xingchuang.haiguo.customimageview.CircleImageView
+                android:id="@+id/ib2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onImageButtonClick"
+                android:src="@mipmap/girl2"
+                app:border_color="@color/lightgray"
+                app:border_width="2dp"
+                app:heightPercent="0.6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/outSchool"
+                android:textColor="@color/orange"
+                app:heightPercent="0.4" />
+        </com.xingchuang.haiguo.customview.LinearCircleViewTextView>
+
+        <com.xingchuang.haiguo.customview.LinearCircleViewTextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            app:widthPercent="0.25" >
+
+            <com.xingchuang.haiguo.customimageview.CircleImageView
+                android:id="@+id/ib3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onImageButtonClick"
+                android:src="@mipmap/girl2"
+                app:border_color="@color/lightgray"
+                app:border_width="2dp"
+                app:heightPercent="0.6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/littleGame"
+                android:textColor="@color/orange"
+                app:heightPercent="0.4" />
+        </com.xingchuang.haiguo.customview.LinearCircleViewTextView>
+
+        <com.xingchuang.haiguo.customview.LinearCircleViewTextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            app:widthPercent="0.25" >
+
+            <com.xingchuang.haiguo.customimageview.CircleImageView
+                android:id="@+id/ib4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onImageButtonClick"
+                android:src="@mipmap/girl2"
+                app:border_color="@color/lightgray"
+                app:border_width="2dp"
+                app:heightPercent="0.6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/task"
+                android:textColor="@color/orange"
+                app:heightPercent="0.4" />
+        </com.xingchuang.haiguo.customview.LinearCircleViewTextView>
+    </com.xingchuang.haiguo.customview.LinearCenterViewGroup>
+
+    <ImageView
+        android:id="@+id/secondLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/firstTitle"
+        android:layout_marginTop="2dp"
+        android:background="@color/lightgray"
+        android:contentDescription="@string/desc" />
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondLine"
+        android:layout_marginTop="2dp"
+        android:text="@string/thinkYouLike"
+        android:textSize="20sp" />
+
+    <com.xingchuang.haiguo.customview.LinearListView
+        android:id="@+id/likeListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/like" >
+    </com.xingchuang.haiguo.customview.LinearListView>
+
+</RelativeLayout>

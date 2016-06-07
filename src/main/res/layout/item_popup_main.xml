@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/dirItemImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/dirItemImage"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dirItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所有图片"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/dirItemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="1212张"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/dot_focus"/>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_frame_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.xingchuang.haiguo.customimageview.CircleImageView
+                android:id="@+id/img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="onImageButtonClick"
+                android:src="@mipmap/img_1" />
+            <!--<ImageView -->
+            <!--android:id="@+id/img1"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:onClick="onImageButtonClick"-->
+            <!--android:src="@mipmap/img_1"/>-->
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/img1"
+                android:text="电话号码"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp">
+
+            <com.xingchuang.haiguo.customimageview.CircleImageView
+                android:id="@+id/img2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/img_2" />
+
+            <Button
+                android:id="@+id/btnAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/img2"
+                android:background="@null"
+                android:onClick="onButtonClick"
+                android:text="账户余额"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <com.xingchuang.haiguo.customimageview.CircleImageView
+                android:id="@+id/img3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/img_3" />
+
+            <Button
+                android:id="@+id/btnCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/img3"
+                android:onClick="onButtonClick"
+                android:background="@null"
+                android:text="我的卡券"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <com.xingchuang.haiguo.customimageview.CircleImageView
+                android:id="@+id/img4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/img_4" />
+
+            <Button
+                android:id="@+id/btnSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/img4"
+                android:onClick="onButtonClick"
+                android:background="@null"
+                android:text="我的学校"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnExitLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:onClick="onButtonClick"
+                android:background="@null"
+                android:text="退出登录"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

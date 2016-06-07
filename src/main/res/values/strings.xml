@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <resources>
+
+    <string name="app_name">嗨菓</string>
+
+    <string name="radiobtn_home">主页</string>
+
+    <string name="radiobtn_order">订单</string>
+
+    <string name="radiobtn_user">我</string>
+
+    <string name="gcSchoolName">南京工程学院</string>
+
+    <string name="xzSchoolName">南京晓庄学院</string>
+
+    <string name="desc">图片内容描述</string>
+
+    <string name="search">搜索</string>
+
+    <string name="thinkYouLike">猜你喜欢</string>
+
+    <string name="inSchool">校内</string>
+
+    <string name="outSchool">校外</string>
+
+    <string name="littleGame">小游戏</string>
+
+    <string name="task">任务</string>
+
+    <string name="serviceQQ">客服QQ: 88888888</string>
+
+    <string name="servicePhone">客服电话: 88888888</string>
+
+    <string name="serviceEmail">Email: 88888888@qq.com</string>
+
+    <string name="registertitle">注册</string>
+
+    <string name="findTitle">找回密码</string>
+
+    <string name="phone">手机</string>
+
+    <string name="phoneNum">手机号码</string>
+
+    <string name="findPassword">新密码</string>
+
+    <string name="password">密码</string>
+
+    <string name="password2">再次输入密码</string>
+
+    <string name="verificationcode">验证码</string>
+
+    <string name="getverificationcode">获取验证码</string>
+
+    <string name="submit">确定</string>
+
+    <string name="findSubmit">立即找回</string>
+
+    <string name="backToLogin">已有帐号？点击登录</string>
+
+    <string name="title">Title</string>
+
+    <string name="content">Content</string>
+
+    <string name="login">登录</string>
+
+    <string name="forgetPassword">忘记密码？</string>
+
+    <string name="noOrder">您还没有订单哦~~</string>
+
+    <string name="xiduoduo">---喜多多---</string>
+
+    <string name="submitOrder">确认购买</string>
+
+    <string name="itemCost">￥10</string>
+
+    <string name="pull_to_refresh">下拉可以刷新</string>
+
+    <string name="release_to_refresh">释放立即刷新</string>
+
+    <string name="refreshing">正在刷新…</string>
+
+    <string name="not_updated_yet">暂未更新过</string>
+
+    <string name="updated_at">上次更新于%1$s前</string>
+
+    <string name="updated_just_now">刚刚更新</string>
+
+    <string name="time_error">时间有问题</string>
+
+</resources>

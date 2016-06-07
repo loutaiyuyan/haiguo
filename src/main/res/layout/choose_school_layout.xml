@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/ll_home_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/app_name"
+            android:textColor="@color/orange"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/tabline1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:contentDescription="@string/desc"
+            android:background="@color/lightgray" />
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:background="@null"
+            android:text="@string/gcSchoolName"
+            android:textSize="40sp" />
+    <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:text="@string/xzSchoolName"
+            android:textSize="40sp" />
+    
+    
+</LinearLayout>
